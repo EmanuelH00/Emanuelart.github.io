@@ -177,3 +177,29 @@ input:focus{
     text-decoration: line-through;
     color: gray;
 }
+
+@media screen and (max-width: 500px) {
+    header h1{
+        font-size: 30px;
+        padding: 0;
+    }
+    img{
+        width: 60px;
+        margin: 2em;
+    }
+    
+    .list{
+        margin: 0;
+        
+    }
+    .dateRight{
+        margin: 0;
+    }
+    form{
+        grid-template-columns: 45px;
+        grid-column-gap: 10px;
+    }
+    .orderButton{
+        width: 20px;
+    }
+}
