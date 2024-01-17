@@ -1,0 +1,179 @@
+/*fonts 
+japan
+font-family: 'Noto Serif JP', serif;
+font-family: 'Noto Serif JP', serif;
+font-family: 'Signika Negative', sans-serif;
+romanji
+*/
+/*tramnspartente
+background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+*/
+*{
+    margin: 0;
+    padding: 0;
+    transition: 2s;
+}
+:root {
+    --pri: #F597F4;
+    --sec: #AD2E92;
+    --trec: #9C2BF0;
+    --bla: #000; 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    background: #614385;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.image {
+    width: 40%;
+    height: 110px;
+    align-items: start;
+    justify-content: center;
+    padding-left: 50px;
+}
+img {
+    width: 90px;
+    justify-content: right;
+    
+}
+
+header h1{
+    width: 60%;
+    padding-left: 20px;
+    font-size: 60px;
+    text-align: left;
+    justify-content: center;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--sec);
+}
+
+.caja {
+    width: 100%;
+    height: 100%;
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.redonborder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--pri);
+    width: 100%;
+    max-width: 400px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 0 20px;
+}
+
+#dateNumber{
+    font-size: 40px;
+}
+
+#dateText{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 10px;
+    justify-content: right;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText {
+    font-weight: bold;
+}
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 10px 5px;
+    padding: 5px;
+    display: flex;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 28px;
+    
+}
+
+input {
+    height: 30px;
+    border: none;
+    padding-left: 15px;
+    background-color: rgb(ffffff10);
+}
+
+input:focus{
+    outline: none;
+}
+
+.addTaskButtom,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButtom {
+    width: 30px;
+    color:#fff;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--trec);
+}
+
+.orderButton {
+    background-color: var(--sec);
+    width: 100px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.task {
+    background-color: var(--bla);
+    padding: 15px;
+    margin-top: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.done {
+    background-color: #fff;
+    text-decoration: line-through;
+    color: gray;
+}

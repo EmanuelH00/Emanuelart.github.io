@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>formulario </title>
+    <link href="stily.css" rel="stylesheet">
+  </head>
+<body>
+    <div class="conteiner">
+      <header>
+        <h1 id="title">文化旅行</h1>
+        <p id="description">当社のウェブサイトを訪問していただきありがとうございます</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">名前</label><br>
+          <input type="text" name="name" id="name" class="form-cont" placeholder="名前を入力してください" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">電子メール</label><br>
+          <input type="email" name="email" id="email" class="form-cont" placeholder="あなたの電子メールを書く" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">年齢 <span class="clu"> (随意)</span></label><br>
+          <input type="number" name="age" id="number" min="10" max="100"  class="form-cont" placeholder="あなたの年齢を書く" required>
+        </div>
+        <div class="form-group">
+          <p>現在の役割に最も適したオプションはどれですか?</p>
+          <select id="dropdown" name="role" class="form-cont" required>
+            <option disabled selected value>現在の役割を選択</option>
+            <option value="学生">学生</option>
+            <option value="仕事">フルタイムの仕事</option>
+            <option value="言わないで">言わないで</option>
+            <option value="他">他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>お友達に日本への旅行をお勧めしますか?</p>
+          <label><input name="user-reconmed" type="radio" value="必ず" class="input-radio" checked>必ず</label><br>
+          <label><input name="user-reconmed" type="radio" value="恐らく" class="input-radio">恐らく</label><br>
+          <label><input name="user-reconmed" type="radio" value="not-sure" class="input-radio">自信がありません</label><br>
+        </div>
+        <div class="form-group">
+           <p>次のどの場所を訪れましたか? <span class="clu"> (見たいものをマークする)</span></p>
+           <label>
+             <input type="checkbox" name="prefer" class="inpu-box" value="kioto">京都</input>
+           </label><br>
+           <label>
+             <input type="checkbox" name="prefer" class="inpu-box" value="Miyajima">宮島</input>
+           </label><br>
+           <label>
+             <input type="checkbox" name="prefer" class="inpu-box" value="tokio">東京</input>
+           </label><br>
+           <label>
+             <input type="checkbox" name="prefer" class="inpu-box" value="nara">奈良</input>
+           </label><br>
+           <label>
+             <input type="checkbox" name="prefer" class="inpu-box" value="castillo-himeji">姫路城</input>
+           </label><br>
+           <label>
+             <input type="checkbox" name="prefer" class="inpu-box" value="monte-fuji">富士山</input>
+           </label>
+        </div>
+        <div class="form-group">
+          <p>コメントはありますか?</p>
+          <textarea id="comento" class="input-textarea" name="coment" placeholder="ここにあなたのコメントを入力してください..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="biton-submit">送信</button>
+        </div>
+      </form>
+    </div>
+  </body>

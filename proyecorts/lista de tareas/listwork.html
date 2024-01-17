@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listwork</title>
+    <link rel="stylesheet" href="list.css">
+    <script src="work.js" type="text/javascript" defer></script>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="image">
+            <img src="img/redi logo mediano very peri fw.png" alt="">
+        </div>
+        <h1>Task List</h1>
+    </header>
+    <div class="caja">
+        <div class="list redonborder">
+            <div class="date">
+                <div class="dateRight">
+                    <div id="dateNumber"></div>
+                    <div class="mesan">
+                        <div id="dateMonth"></div>
+                        <div id="dateYear"></div>
+                    </div>
+                </div>
+                <div id="dateText"></div>
+            </div>
+            <form onsubmit="addNewTask(event)">
+                <input type="text" name="taskText" autocomplete="off" placeholder="new task" class="redonborder">
+                <button type="submit" class="addTaskButtom">+</button>
+                <button type="button" class="orderButton redonborder" onclick="renderOrderredTasks()">命令</button>
+            </form>
+            <div id="tasksContainer"></div>
+        </div>
+    </div>
+</body>
+</html>

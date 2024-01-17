@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora2</title>
+    <link type="text/css" rel="stylesheet" href="estiloc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div id="appG">
+        <form name="calculador">
+          <div class="pantalla">
+          <input class="ptn" type="textfield" name="ans" value="" autocomplete="off" readonly >
+        </div>
+          <div class="separa">
+          <input class="btn" type="button" value="7" onclick="document.calculador.ans.value+='7'">
+          <input class="btn" type="button" value="8" onclick="document.calculador.ans.value+='8'">
+          <input class="btn" type="button" value="9" onclick="document.calculador.ans.value+='9'">
+          <input class="btn" type="button" value="+" onclick="document.calculador.ans.value+='+'">
+          <br>
+          <input class="btn" type="button" value="4" onclick="document.calculador.ans.value+='4'">
+          <input class="btn" type="button" value="5" onclick="document.calculador.ans.value+='5'">
+          <input class="btn" type="button" value="6" onclick="document.calculador.ans.value+='6'">
+          <input class="btn" type="button" value="-" onclick="document.calculador.ans.value+='-'">
+          <br>
+          <input class="btn" type="button" value="1" onclick="document.calculador.ans.value+='1'">
+          <input class="btn" type="button" value="2" onclick="document.calculador.ans.value+='2'">
+          <input class="btn" type="button" value="3" onclick="document.calculador.ans.value+='3'">
+          <input class="btn" type="button" value="X" onclick="document.calculador.ans.value+='*'">
+          <br>
+          <input class="btn" type="button" value="0" onclick="document.calculador.ans.value+='0'">
+          <input class="btn" type="reset" value="C">
+          <input class="btn" type="button" value="=" onclick="document.calculador.ans.value=eval(document.calculador.ans.value)">
+          <input class="btn" type="button" value="/" onclick="document.calculador.ans.value+='/'">
+          <div class="firma">
+            <img src="https://i.ibb.co/SXjwgKd/redi-logo-mediano-very-peri-fw.png" alt="redi-logo-mediano-very-peri-fw" border="0">
+            <h1>Emanuel Hernandez</h1>
+        </div>
+        </div>
+        
+        </form>
+      </div>
+</body>
+</html>

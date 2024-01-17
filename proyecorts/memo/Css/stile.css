@@ -1,0 +1,94 @@
+:root{
+    --w: calc(60vw / 4);
+    --h: calc(60vh / 2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.6s ease;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fondo{
+    min-height: 100%;
+    background: linear-gradient(rgb(53, 53, 53), rgb(0,0,0));
+}
+
+div {
+    display: inline-block;
+}
+
+.area-targeta,
+.targeta,
+.cara{
+    cursor: pointer;
+    width: var(--w);
+    height: var(--h);
+    min-width: 100px;
+}
+
+
+.targeta{
+    position: relative;
+    transform-style: preserve-3d;
+    animation: iniciar 3s;
+    
+}
+
+
+
+.cara{
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0, 0, 0, 10px rgb(49, 49, 49);
+}
+
+img{
+    width: 70%;
+    padding: 5px;
+    
+}
+.trasera{
+   transform: rotateY(180deg);
+}
+    
+.nuevo-game{
+    background: red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    border: solid 2px #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    margin: 0px auto;
+    
+}
+
+@keyframes iniciar {
+    20%,90%{
+        transform: rotateY(180deg);
+    }
+    0%,100%{
+        transform: rotateY(0deg);
+    }
+}
