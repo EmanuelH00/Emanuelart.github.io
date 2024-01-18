@@ -27,7 +27,7 @@ body{
 
 .fondo{
     min-height: 100%;
-    background: linear-gradient(rgb(53, 53, 53), rgb(0,0,0));
+    background: linear-gradient(rgba(123, 25, 180, 0.589), rgb(0,0,0));
 }
 
 div {
