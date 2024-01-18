@@ -21,6 +21,9 @@ body{
     align-items: center;
     text-align: center;
 }
+.fondo > h1{
+    font-size: 3em;
+}
 
 .fondo{
     min-height: 100%;
@@ -90,5 +93,26 @@ h3{
     }
     0%,100%{
         transform: rotateY(0deg);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #tablero{
+        height: 50vh;
+
+    }
+
+    .area-targeta,
+    .targeta,
+    .cara{
+        min-width: 70px;
+       height: 100px;
+    }
+    img{
+        width: 100%;
+        padding: 0;
+    }
+    .fondo > h1{
+        font-size: 2em;
     }
 }
