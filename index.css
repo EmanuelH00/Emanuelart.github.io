@@ -1884,9 +1884,12 @@ footer > h5{
   }
 }
 @media screen and (max-width: 360px) {
+   #presentacion{
+    height: 160vh;
+  }
   /*portafolio*/
   #portafolio{
-    height: 800vh;
+    height: 850vh;
   }
 }
 
