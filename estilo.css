@@ -156,7 +156,7 @@ main{
 
 p {
     display: flex;
-    text-align: center;
+    text-align:  justify;
     font-size: 15px;
     font-family: 'Abel', sans-serif;
     color: #fff;
